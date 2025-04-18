@@ -4,8 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <h1>hello</h1>
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="flex-none">
+          <img src="assets/logo.png" alt="">
+        </div>
+        <div class="flex-1 p-2">
+          <h3 class="  text-xl">Dev<span class="font-bold">Board</span></h3>
+        </div>
+        <div class="flex gap-2">
+        <div class="flex">
+           
+                <img class="h-auto p-2" src="assets/checkbox.png" alt="">
+            
+            
+                <h3 class="text-2xl font-bold p-2">23</h3>
+            </div>
+            <div class="pt-1">
+                <img src="assets/theme-btn.png" alt="">
+            </div>
+         
+        </div>
+      </div>
+      <section>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 px-4 pb-10 mt-3">
+
+            <!-- Left Section -->
+            <div class="lg:col-span-3 space-y-4">
+        
+              <!-- Top Row: Task Count, Announcement, Date -->
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Task count -->
+                <div class="bg-white rounded-xl p-4 flex items-center gap-4 shadow">
+                  <img src="assets/checkbox.png" alt="">
+                  <div>
+                    <p class="text-sm text-gray-500">Task Assigned</p>
+                    <p class="text-xl font-bold">06</p>
+                  </div>
+                </div>
+        
+                <!-- Announcement -->
+                <div class="bg-gradient-to-r from-indigo-400 to-blue-500 text-white p-4 rounded-xl flex items-center gap-4 shadow">
+                  <div class="text-4xl"><img src="assets/board.png" alt=""></div>
+                  
+                  <div id="discover" class="text-lg font-semibold">Discover Something <br> New Today!</div>
+                </div>
+        
+                <!-- Date -->
+                <div class="bg-white rounded-xl p-4 flex items-center gap-4 shadow">
+                  <div class="text-3xl"><img src="assets/calender.png" alt=""></div>
+                  <div>
+                    <p class="text-sm text-gray-500">Date</p>
+                    <p class="text-md font-bold">Tue Feb 25 2025</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Task Cards -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Example Task Card -->
+                <div class="bg-blue-50 p-4 rounded-xl shadow ">
+                  <p class="text-xs text-gray-500 mb-1  rounded-xl p-2  ">Shop Ease</p>
+                  <h3 class="font-semibold text-lg">Fix Mobile Button Issue</h3>
+                  <p class="text-sm text-gray-500 mt-2 bg-white rounded-xl p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                  <div class="flex justify-between items-center mt-4">
+                    <p class="text-sm text-gray-500">Deadline<br><span class="font-semibold">21 March 2025</span></p>
+                    <button class="bg-indigo-600 text-white text-sm px-4 py-1 rounded-lg">Completed</button>
+                  </div>
+                </div>
+        
+                <!-- Repeat this card structure for all tasks -->
+                <div class="bg-blue-50 p-4 rounded-xl shadow ">
+                    <p class="text-xs text-gray-500 mb-1  rounded-xl p-2  ">CloudSync</p>
+                    <h3 class="font-semibold text-lg">Add Dark Mode</h3>
+                    <p class="text-sm text-gray-500 mt-2 bg-white rounded-xl p-4">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    <div class="flex justify-between items-center mt-4">
+                      <p class="text-sm text-gray-500">Deadline<br><span class="font-semibold">21 March 2025</span></p>
+                      <button class="bg-indigo-600 text-white text-sm px-4 py-1 rounded-lg">Completed</button>
+                    </div>
+                  </div>
+        
+                  <div class="bg-blue-50 p-4 rounded-xl shadow ">
+                    <p class="text-xs text-gray-500 mb-1  rounded-xl p-2  ">Shop Ease</p>
+                    <h3 class="font-semibold text-lg">Fix Mobile Button Issue</h3>
+                    <p class="text-sm text-gray-500 mt-2 bg-white rounded-xl p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                      and ensure onClick works properly</p>
+                    <div class="flex justify-between items-center mt-4">
+                      <p class="text-sm text-gray-500">Deadline<br><span class="font-semibold">21 March 2025</span></p>
+                      <button class="bg-indigo-600 text-white text-sm px-4 py-1 rounded-lg">Completed</button>
+                    </div>
+                  </div>
+        
+                  <div class="bg-blue-50 p-4 rounded-xl shadow ">
+                    <p class="text-xs text-gray-500 mb-1  rounded-xl p-2  ">Shop Ease</p>
+                    <h3 class="font-semibold text-lg">Fix Mobile Button Issue</h3>
+                    <p class="text-sm text-gray-500 mt-2 bg-white rounded-xl p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                      and ensure onClick works properly</p>
+                    <div class="flex justify-between items-center mt-4">
+                      <p class="text-sm text-gray-500">Deadline<br><span class="font-semibold">21 March 2025</span></p>
+                      <button class="bg-indigo-600 text-white text-sm px-4 py-1 rounded-lg">Completed</button>
+                    </div>
+                  </div>
+        
+                  <div class="bg-blue-50 p-4 rounded-xl shadow ">
+                    <p class="text-xs text-gray-500 mb-1  rounded-xl p-2  ">Shop Ease</p>
+                    <h3 class="font-semibold text-lg">Fix Mobile Button Issue</h3>
+                    <p class="text-sm text-gray-500 mt-2 bg-white rounded-xl p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                      and ensure onClick works properly</p>
+                    <div class="flex justify-between items-center mt-4">
+                      <p class="text-sm text-gray-500">Deadline<br><span class="font-semibold">21 March 2025</span></p>
+                      <button class="bg-indigo-600 text-white text-sm px-4 py-1 rounded-lg">Completed</button>
+                    </div>
+                  </div>
+        
+                  <div class="bg-blue-50 p-4 rounded-xl shadow ">
+                    <p class="text-xs text-gray-500 mb-1  rounded-xl p-2  ">Shop Ease</p>
+                    <h3 class="font-semibold text-lg">Fix Mobile Button Issue</h3>
+                    <p class="text-sm text-gray-500 mt-2 bg-white rounded-xl p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                      and ensure onClick works properly</p>
+                    <div class="flex justify-between items-center mt-4">
+                      <p class="text-sm text-gray-500">Deadline<br><span class="font-semibold">21 March 2025</span></p>
+                      <button class="bg-indigo-600 text-white text-sm px-4 py-1 rounded-lg">Completed</button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        
+            <!-- Right Sidebar -->
+            <div class="bg-white rounded-xl shadow p-6 h-full items-center">
+                <h2 class="text-lg font-bold flex items-center space-x-2">
+                  <span>🕒</span>
+                  <span>Activity Log</span>
+                </h2>
+                <button class="mt-4 bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">
+                  Clear History
+                </button>
+              </div>
+          </div>
+      </section>
 </body>
 </html>
